@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 17, 2022 6:04:48 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="rw.okila.sm.model.Products" table="products" schema="public" optimistic-lock="version">
+        <id name="prodtin" type="string">
+            <column name="prodtin" length="40" />
+            <generator class="assigned" />
+        </id>
+        <property name="prodname" type="string">
+            <column name="prodname" length="40" />
+        </property>
+        <property name="proddescription" type="string">
+            <column name="proddescription" length="40" />
+        </property>
+        <property name="prodtype" type="string">
+            <column name="prodtype" length="40" />
+        </property>
+        <property name="mandate" type="string">
+            <column name="mandate" length="40" />
+        </property>
+        <property name="expdate" type="string">
+            <column name="expdate" length="40" />
+        </property>
+        <property name="price" type="string">
+            <column name="price" length="40" />
+        </property>
+    </class>
+</hibernate-mapping>

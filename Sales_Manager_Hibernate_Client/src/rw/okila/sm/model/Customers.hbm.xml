@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 17, 2022 6:04:48 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="rw.okila.sm.model.Customers" table="customers" schema="public" optimistic-lock="version">
+        <id name="tinnumber" type="string">
+            <column name="tinnumber" length="40" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstname" type="string">
+            <column name="firstname" length="40" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="lastname" length="40" />
+        </property>
+        <property name="phonenumber" type="string">
+            <column name="phonenumber" length="40" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="40" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="40" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="40" />
+        </property>
+    </class>
+</hibernate-mapping>
